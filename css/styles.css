@@ -73,7 +73,7 @@ address{
 
 /* Header */
 .header {
-    border-bottom: var(--border-color)
+    border-bottom: var(--border-color);
 }
 .container-header{
     display: flex;
@@ -88,7 +88,6 @@ address{
     line-height: 1.19;
     letter-spacing: 0.03em;
     margin-right: 93px;
-    /* margin-left: 215px; */
 }
 
 .logo-part-header{
@@ -98,15 +97,10 @@ address{
 
 .nav-list-link-current{
     color: var(--accent-color);
-    /* text-decoration: none; */
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    /* margin-left: 50px;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px; */
 }
 .nav-list-link{
     color: var(--tittle-text-color);
@@ -138,29 +132,27 @@ address{
 
 
 .header-contact{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     color: var(--primary-text-color);
+    fill: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
     margin-left: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
 }
 .header-contact:hover,
-.header-contact:focus {
+.header-contact:focus,
+.header-contact .header-icon:hover,
+.header-contact .header-icon:focus {
     color: var(--accent-color);
     fill: var(--accent-color);
 }
 
-.header-icon {
-    fill: var(--primary-text-color);
-    margin-right: 10px;
-}
+
 .contact-list {
     display: flex;
     padding: 0;
@@ -201,9 +193,6 @@ address{
 /* HERO */
 .hero{
     background-color: var(--secondary-background-color);
-    padding-top: 200px;
-    padding-bottom: 200px;
-
 }
 .overlay {
     max-width: 1600px;
@@ -219,6 +208,8 @@ address{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .container-hero {
     text-align: center;
@@ -316,12 +307,12 @@ address{
     border-radius: 4px;
 }
 .benefits-icon {
-   padding-top: 25px;
-   padding-bottom: 25px;
-   padding-left: 100px;
-   padding-right: 100px;
-   width: 100%;
-   height: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    height: 100%;
 }
 .section-benefits-list {
     display: flex;
